@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fadingEdge="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="20dp"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+        
+		
+		<!-- legacy(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="legacy" />
+
+				<Switch
+					android:id="@+id/sw_bool_legacy"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- LED1(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="LED1" />
+
+				<Switch
+					android:id="@+id/sw_bool_LED1"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- LED2(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="LED2" />
+
+				<Switch
+					android:id="@+id/sw_bool_LED2"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- LED3(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="LED3" />
+
+				<Switch
+					android:id="@+id/sw_bool_LED3"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- LED4(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="LED4" />
+
+				<Switch
+					android:id="@+id/sw_bool_LED4"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- Moter(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Moter" />
+				
+				<TextView
+					android:id="@+id/tv_data_Moter"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:textSize="16sp"
+					android:gravity="end" />	
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_Moter"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="-5" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_Moter"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="10" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="5" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- LED_G(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="LED_G" />
+				
+				<TextView
+					android:id="@+id/tv_data_LED_G"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:textSize="16sp"
+					android:gravity="end" />	
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_LED_G"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="0" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_LED_G"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="254" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="254" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- LED_R(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="LED_R" />
+				
+				<TextView
+					android:id="@+id/tv_data_LED_R"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:textSize="16sp"
+					android:gravity="end" />	
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_LED_R"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="0" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_LED_R"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="254" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="254" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- LED_B(数值可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="LED_B" />
+				
+				<TextView
+					android:id="@+id/tv_data_LED_B"
+					android:layout_width="110dp"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:textSize="16sp"
+					android:gravity="end" />	
+									
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/tv_data_LED_B"
+					android:layout_marginTop="10dp"
+					android:gravity="center_vertical"
+					android:orientation="horizontal" >
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="0" />
+						
+					<SeekBar
+						android:id="@+id/sb_data_LED_B"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="3"
+						android:max="254" />
+					
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:text="254" />
+				</LinearLayout>
+			
+		</RelativeLayout>			
+	
+		
+		<!-- Infrared(布尔只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="Infrared" />
+
+				<Switch
+					android:id="@+id/sw_bool_Infrared"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- Temperature(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="Temperature" />
+
+				<TextView
+					android:id="@+id/tv_data_Temperature"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+		
+		<!-- Humidity(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="Humidity" />
+
+				<TextView
+					android:id="@+id/tv_data_Humidity"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+	
+    </LinearLayout>
+
+</ScrollView>
